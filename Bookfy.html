@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookfy</title>
+    <link rel="stylesheet" href="bookfy.css">
+    <script src="books.js" defer></script>
+    <script src="bookfy.js" defer></script>
+  </head>
+
+  <header>B  o  o  k  f  y</header>
+
+  <body>
+    <article>
+      <h1 id="generi">Generi</h1>
+      <h1 id="autori">Autori</h1>
+      <h1 id="altro">Altro</h1>
+    <h1>
+    <select name='preferiti'>
+      <option value = 'tutti_preferiti'>Preferiti</option>
+      <option value = 'libri_preferiti'>Libri</option>
+      <option value = 'riassunti_preferiti'>Riassunti</option>
+    </select></h1>
+    <h1>
+      <select name='piu_letti'>
+        <option value = 'tutti_piu_letti'>Più letti</option>
+        <option value = 'libri_piu_letti'>Libri più letti</option>
+        <option value = 'riassunti_piu_letti'>Riassunti più letti</option>
+      </select></h1>
+    </article>
+
+    <!-- Don't touch the following part-->
+    <section id="album-view">
+    </section>
+    <section id="modal-view" class="hidden">
+    </section>
+    <!-- Don't touch the previous part-->
+
+    <div class="iscrizione">
+      <strong>Hai già un account?</strong><br><br>
+      NICKNAME<br><input type'text' name='user_name'><br>
+      PASSWORD<br><input type='password' name='user_password'><br>
+      <input type="submit" value='Entra' id="login"><br>
+      </div>
+
+    <div class="opzioni">
+        <br>
+        <a href="a">Riassunti<br></a>
+        <a href="a">Biografie<br></a>
+        <a href="a">Playlist<br></a>
+        <a href="a">Note correlate<br></a>
+    </div>
+
+    <div class="login"> <strong>Crea un account</strong>
+    <form name='form_login' method="post">
+      <br>Nome <input type="text" name="nome"><br>
+      Cognome <input type="text" name="cognome"><br>
+      Email <input type="text" name="email"><br>
+      Password <input type="password" name="password"><br>
+      <input type="submit" value="Iscriviti"><br>
+    </form>
+    </div>
+
+  </body>
+
+</html>
